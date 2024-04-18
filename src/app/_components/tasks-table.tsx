@@ -15,9 +15,10 @@ import { TasksTableToolbarActions } from "./tasks-table-toolbar-actions"
 
 interface TasksTableProps {
   tasksPromise: ReturnType<typeof getTasks>
+  defaultSort?: string
 }
 
-export function TasksTable({ tasksPromise }: TasksTableProps) {
+export function TasksTable({ tasksPromise, defaultSort }: TasksTableProps) {
   // Flags for showcasing some additional features. Feel free to remove them.
   const { enableAdvancedFilter, showFloatingBar } = useTasksTable()
 
@@ -31,6 +32,7 @@ export function TasksTable({ tasksPromise }: TasksTableProps) {
     data,
     columns,
     pageCount,
+    defaultSort,
     filterFields,
     enableAdvancedFilter,
   })

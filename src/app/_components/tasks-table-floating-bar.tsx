@@ -145,7 +145,7 @@ export function TasksTableFloatingBar({ table }: TasksTableFloatingBarProps) {
                     </Button>
                   </TooltipTrigger>
                 </SelectTrigger>
-                <TooltipContent className=" border bg-accent font-semibold text-foreground dark:bg-zinc-900">
+                <TooltipContent className="border bg-accent font-semibold text-foreground dark:bg-zinc-900">
                   <p>Update priority</p>
                 </TooltipContent>
               </Tooltip>

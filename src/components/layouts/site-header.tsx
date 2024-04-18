@@ -25,6 +25,14 @@ export function SiteHeader() {
             Docs
           </Link>
         </nav>
+        <nav className="flex w-full items-center gap-6 text-sm">
+          <Link
+            href="/variant"
+            className="text-foreground/60 transition-colors hover:text-foreground"
+          >
+            Variant
+          </Link>
+        </nav>
         <nav className="flex flex-1 items-center md:justify-end">
           <Button variant="ghost" size="icon" className="size-8" asChild>
             <Link

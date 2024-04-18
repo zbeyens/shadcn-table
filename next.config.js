@@ -8,9 +8,9 @@ await import("./src/env.js")
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
-  experimental: {
-    ppr: true,
-  },
+  // experimental: {
+  //   ppr: true,
+  // },
 }
 
 // const millionConfig = {
